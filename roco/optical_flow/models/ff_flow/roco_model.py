@@ -5,7 +5,7 @@ from .fflow import FFlow
 
 
 @register_model
-class TTSDPT(BaseModel):
+class FFlow(BaseModel):
 
     def __init__(
         self,
