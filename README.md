@@ -8,7 +8,7 @@ Official PyTorch implementation of RoCo-Spring Challenge Paper FFlow:
 Authors: [Praroop Chanda](https://praroopchanda.github.io/), [Suryansh Kumar](https://suryanshkumar.github.io/)
 
 
-<p align="center"><img width=70% src="assets/Foundational_DPT3.png"></p>
+<p align="center"><img width=70% src="assets/Foundation_DPT3.png"></p>
 
 
 
@@ -133,6 +133,9 @@ tensorboard --logdir checkpoints
 and then access [http://localhost:6006](http://localhost:6006) in your browser.
 
 
+## Roco Test Run
+
+For inference and evaluation on the RobustSpring benchmark, please refer to the [ROCO README](./roco/README.md).
 
 ## Acknowledgements
 
