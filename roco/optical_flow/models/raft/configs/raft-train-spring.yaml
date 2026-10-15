@@ -1,0 +1,23 @@
+# lightning.pytorch==2.4.0
+seed_everything: true
+ckpt_path: sintel
+lr: 1.0e-4
+wdecay: 1.0e-5
+trainer:
+  max_epochs: 10
+  accumulate_grad_batches: 4
+  gradient_clip_val: 1.0
+  devices: 0,
+model:
+  class_path: raft
+  init_args:
+    iters: 12
+    predict_all_directions: false
+data:
+  train_dataset: spring-train
+  val_dataset: spring-val
+  train_batch_size: 1
+  train_num_workers: 1
+  train_crop_size: [540, 960]
+  train_transform_cuda: false
+  train_transform_fp16: false
